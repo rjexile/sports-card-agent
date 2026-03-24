@@ -1,8 +1,21 @@
 [project]
-name = "sports-card-price-agent"
-version = "0.1.0"
-description = "MCP server for sports trading card pricing, market analysis, and arbitrage detection"
+name = "sports-card-agent"
+version = "1.0.0"
+description = "MCP server for sports trading card pricing, market analysis, grading ROI, investment advice, and player stats (NBA/NFL/MLB)"
+readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.12"
+authors = [
+    {name = "rjexile", email = "rj@exilebrewing.com"},
+]
+keywords = ["mcp", "sports-cards", "trading-cards", "pricing", "nba", "nfl", "mlb", "arbitrage", "grading"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
 dependencies = [
     "mcp[cli]",
     "httpx",
@@ -12,6 +25,14 @@ dependencies = [
 [project.scripts]
 sports-card-agent = "src.server:main"
 
+[project.urls]
+Homepage = "https://github.com/rjexile/sports-card-agent"
+Repository = "https://github.com/rjexile/sports-card-agent"
+Issues = "https://github.com/rjexile/sports-card-agent/issues"
+
 [build-system]
-requires = ["setuptools>=75"]
-build-backend = "setuptools.backends._legacy:_Backend"
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
