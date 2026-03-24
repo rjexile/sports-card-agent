@@ -2,6 +2,8 @@
 
 An MCP server that gives AI agents expert-level sports trading card data. Covers pricing, market analysis, arbitrage detection, grading ROI, investment advice, player stats (NBA/NFL/MLB), vintage card analysis, and trending player alerts.
 
+[![Sports Trading Card Agent MCP server](https://glama.ai/mcp/servers/rjexile/sports-card-agent/badges/card.svg)](https://glama.ai/mcp/servers/rjexile/sports-card-agent)
+
 **9 tools. 3 sports. 40+ vintage sets. Zero manual research.**
 
 ## Tools
