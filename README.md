@@ -1,5 +1,7 @@
 # Sports Card Agent
 
+<!-- mcp-name: io.github.rjexile/sports-card-agent -->
+
 An MCP server that gives AI agents expert-level sports trading card data. Covers pricing, market analysis, arbitrage detection, grading ROI, investment advice, player stats (NBA/NFL/MLB), vintage card analysis, and trending player alerts.
 
 **9 tools. 3 sports. 40+ vintage sets. Zero manual research.**

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rjexile/sports-card-agent",
+  "description": "Sports card pricing, market analysis, grading ROI, and player stats (NBA/NFL/MLB)",
+  "repository": {
+    "url": "https://github.com/rjexile/sports-card-agent",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "sports-card-agent",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "eBay API application ID (register free at developer.ebay.com)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "EBAY_APP_ID"
+        },
+        {
+          "description": "eBay API certificate ID (register free at developer.ebay.com)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "EBAY_CERT_ID"
+        },
+        {
+          "description": "Ball Don't Lie API key for player stats (register free at app.balldontlie.io)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "BALLDONTLIE_API_KEY"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 [project]
 name = "sports-card-agent"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP server for sports trading card pricing, market analysis, grading ROI, investment advice, and player stats (NBA/NFL/MLB)"
 readme = "README.md"
 license = {text = "MIT"}
