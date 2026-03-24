@@ -1,0 +1,17 @@
+[project]
+name = "sports-card-price-agent"
+version = "0.1.0"
+description = "MCP server for sports trading card pricing, market analysis, and arbitrage detection"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]",
+    "httpx",
+    "python-dotenv",
+]
+
+[project.scripts]
+sports-card-agent = "src.server:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.backends._legacy:_Backend"
